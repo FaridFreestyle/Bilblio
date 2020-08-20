@@ -1,0 +1,129 @@
+ body{
+  background-color:  #f7f2f2;
+  }
+header{
+	background-color: #d8c2bc ;
+	color: black;
+	height:  200px;
+  }
+h1{
+	font-size: 60px ;
+	text-align: center;
+  }
+h2{
+	color: black;
+	font-size: 40px ;
+	text-align: center;
+  }
+  /* c'est le button pour retourner au menu et pour aller sur la page index*/
+button {
+  background-color: #bababa ;
+  color: black;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  font-size: 20px ;
+  
+}
+
+#barre{	text-align: center;}
+.container{
+	background-color: #e06868 ;
+  }
+.col .container{
+  background-color: #f7f2f2 ; 
+
+  }
+#boutonAjout{  
+  background-color: #bababa ;
+  color: black;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 39%;
+  font-size: 20px }
+
+#boutonChercher{
+  background-color:  #bababa ;
+  color: black;
+  padding: 0px 14px;
+  margin: 9px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  font-size: 20px }
+
+#boutonValider{
+  background-color:  #bababa  ;
+  color: black;
+  padding: 0px 7px;
+  margin: 9px 0;
+  border: none;
+  cursor: pointer;
+  width: 47%;
+  font-size: 20px  
+  padding-bottom: 100px;}
+
+#boutonRenitialiser{
+  background-color:  #bababa ;
+  color: black;
+  padding: 0px 14px;
+  margin: 9px 0;
+  border: none;
+  cursor: pointer;
+  width: 47%;
+  font-size: 20px
+}
+
+  button:hover {
+  opacity: 0.8;
+}
+
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+
+@media screen and (max-width: 1060px) {
+  #boutonAjout{
+    width: 39%; 
+  }
+  #boutonChercher{
+    width: 45%; 
+  }
+  #boutonValider{
+    width: 35%; 
+  }
+  #boutonRenitialiser{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width:800px){
+  #boutonAjout{ 
+  width: 49%;
+  }
+  #boutonChercher{
+  width: 35%;
+  }
+  #boutonValider{
+    width: 47%; 
+  }
+  #boutonRenitialiser{
+    width: 47%; 
+  }
+  .col {
+    width:90%; 
+    padding: 1.5em;
+    flex-direction: column; /* affichage: verticale des produits */
+    justify-content: center; /* alignement vertical */
+  }
+
+}

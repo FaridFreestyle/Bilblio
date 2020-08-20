@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="boostrap/css/bootstrap.min.css" >
+		<link rel=stylesheet href="css.css">
+		<script src=script.js></script>
+		<title>index</title>
+	</head>
+	<body>
+		<header>
+			<h1>Bibliotheque</h1>
+		</header>
+		<br><br>
+		<div class="container"> 
+			<div class="col">
+				<h3>Edition Livre</h3><br>
+				<form name="form3">
+					<label class="text">Code :</label><br>
+					<input type="text" id="code" name="code" size ="25" ><br>
+					
+					<label class="text"> Titre :</label><br>
+					<input type="text" id="titre" name="titre" size ="25" ><br>
+
+					<label class="text">Auteur :</label><br>
+					<input type="text" id="auteur" name="auteur" size ="25" ><br><br>
+					
+					<button type="button" id ="boutonAjout" onclick="enregistrer()"> Ajouter livre </button>
+				</form>
+		    </div>
+
+		   	<div class="col">
+		   		<form name = "form2">
+					<h3>Recherche Livre</h3><br>
+					<label class="text" >code du livre :</label>
+					<input type="text" id="codeLivre" name="codeLivre" size ="20" >
+					<button  type="button" id ="boutonChercher" onclick="chercher()"> Chercher </button>
+				</form>
+				<br>
+
+				<div class="container" id ="cache"  style="visibility: hidden" >			
+					<form NAME=form1>
+						<label class="text">Titre :</label>
+						<input type="text" id="titreResultat" name="titreResultat" size ="20" ><br><br>
+					
+						<label class="text">Auteur :</label>
+						<input type="text" id="resultatAuteur" name="resultatAuteur" size ="20" ><br><br>	
+										
+						<label class="text">Nouveau code a saisir :</label>
+						<input type="text" id="NouveauCode" name="NouveauCode" size ="8" ><br><br>
+
+						<button  type="button" id ="boutonValider" onclick="changerCode()"> Valider </button>
+				 		<button  type="button" id ="boutonRenitialiser" onclick="renitialiser()"> Renitialiser </button>
+					</form>
+				</div>
+				<br><br>		
+		    </div>
+		    
+		    <div id = "barre">	
+				<a href="menu.html"> <button> Retour au menu </button> </a>
+			</div>
+		</div>
+	</body>
+</html>
+
